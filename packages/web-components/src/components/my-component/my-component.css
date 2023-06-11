@@ -1,0 +1,9 @@
+@import "../../reset.css";
+
+:host {
+  color: inherit;
+}
+
+div {
+  font-weight: 700;
+}

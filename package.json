@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "yarn cl:build.watch",
+    "storybook": "yarn sb:sb",
+    "dev": "yarn wa:dev",
+    "prod": "yarn cl:build && yarn wa:build",
+    "wc:build.watch": "yarn --cwd packages/web-components test.watch",
+    "wc:build": "yarn --cwd packages/web-components build",
+    "wc:start": "yarn --cwd packages/web-components start",
+    "wc:test": "yarn --cwd packages/web-components test",
+    "wc:test.watch": "yarn --cwd packages/web-components test.watch",
+    "wc:generate": "yarn --cwd packages/web-components generate",
+    "rc:sb": "yarn --cwd packages/react-components storybook",
+    "rc:build-sb": "yarn --cwd packages/react-components storybook:build",
+    "wa:dev": "yarn --cwd packages/web-app dev",
+    "wa:build": "yarn --cwd packages/web-app build",
+    "wa:start": "yarn --cwd packages/web-app start"
+  }
+}
